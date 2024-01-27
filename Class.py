@@ -6,7 +6,7 @@ matrix[:]='None'
 days=['Mon','Tue','Wed','Thurs','Fri','Sat']
 period=[]
 for i in range(0,9):
-    period.append(`i+1`)
+    period.append("i+1")
 Lname=[]
 name="Name"
 
@@ -20,7 +20,7 @@ def Class():
         matrix[[0],[j]]=numpy.array([i])
         j+=1
     for i in range(0,6):
-        Lname.append((name+`i+1`))
+        Lname.append(name+str(i+1))
     Lname.append('LAB')
     shuffle(Lname)
     count=0
@@ -30,8 +30,7 @@ def Class():
                 shuffle(Lname)
                 matrix[[l],[k]]=numpy.array([i])
                 k+=1
-    print matrix
-
+    print (matrix)
 Class()
 
 
